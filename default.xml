@@ -2,9 +2,10 @@
 <manifest>
   <remote name="yocto-project" fetch="git.yoctoproject.org" />
   <remote name="github" fetch="github.com" />
-  <project name="poky" path="layers/poky" revision="hardknott" remote="yocto-project" />
-  <project name="openembedded/meta-openembedded" path="layers/meta-openembedded" revision="hardknott" remote="github"/>
-  <project name="linux-sunxi/meta-sunxi" path="layers/meta-sunxi" revision="hardknott" remote="github" />
+  <default revision="hardknott" remote="github" />
+  <project name="poky" path="layers/poky" remote="yocto-project" />
+  <project name="openembedded/meta-openembedded" path="layers/meta-openembedded" remote="github"/>
+  <project name="linux-sunxi/meta-sunxi" path="layers/meta-sunxi" remote="github" />
   <project path="build" name="build">
     <copyfile src="conf/local.conf" dest="build/conf/local.conf" />
     <copyfile src="conf/bblayers.conf" dest="build/conf/bblayers.conf" />
