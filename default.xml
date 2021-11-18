@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="yocto-project" fetch="git://git.yoctoproject.org/" />
-  <remote name="github" fetch="git://github.com/" />
+  <remote name="yocto-project" fetch="git.yoctoproject.org" />
+  <remote name="github" fetch="github.com" />
   <default revision="hardknott" remote="github" />
   <project name="poky" path="layers/poky" remote="yocto-project" />
   <project name="openembedded/meta-openembedded" path="layers/meta-openembedded" remote="github"/>
   <project name="linux-sunxi/meta-sunxi" path="layers/meta-sunxi" remote="github" />
-  <project path="vec7or/yocto/build" name="build" revision="master" remote="github">
-    <copyfile src="conf/local.conf" dest="build/conf/local.conf" />
-    <copyfile src="conf/bblayers.conf" dest="build/conf/bblayers.conf" />
+  <project path="vec7or/yocto" name="vector-yocto" revision="master" remote="github">
+    <copyfile src="build/conf/local.conf" dest="build/conf/local.conf" />
+    <copyfile src="build/conf/bblayers.conf" dest="build/conf/bblayers.conf" />
   </project>
 </manifest>
