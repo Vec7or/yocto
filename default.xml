@@ -6,7 +6,7 @@
   <project name="poky" path="layers/poky" remote="yocto-project" />
   <project name="openembedded/meta-openembedded" path="layers/meta-openembedded" remote="github"/>
   <project name="linux-sunxi/meta-sunxi" path="layers/meta-sunxi" remote="github" />
-  <project path="vec7or/yocto/build" name="build" remote="github">
+  <project path="vec7or/yocto/build" name="build" revision="master" remote="github">
     <copyfile src="conf/local.conf" dest="build/conf/local.conf" />
     <copyfile src="conf/bblayers.conf" dest="build/conf/bblayers.conf" />
   </project>
